@@ -18,9 +18,16 @@ de imprimir o fim de linha após o resultado, caso contrário, você receberá
 # Link do problema: https://judge.beecrowd.com/pt/problems/view/1005
 
 # Escreva sua solução abaixo
+# Leitura das notas em ponto flutuante
 A = float(input())
 B = float(input())
 
-MEDIA = (A * 3.5 + B * 7.5) / 11
+# Definição dos pesos
+peso_A = 3.5
+peso_B = 7.5
 
-print(f"MEDIA = {MEDIA:.1f}")
+# Cálculo da média ponderada
+media = ((A * peso_A) + (B * peso_B)) / (peso_A + peso_B)
+
+# Exibição do resultado com uma casa decimal
+print(f"MEDIA = {media:.1f}")
